@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/dark_grey"
+            android:padding="50dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:text="Cadastro"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/nomeInputCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_marginTop="16dp"
+                android:hint="Nome"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="16dp"
+                android:background="@drawable/border_selector"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/userInputCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nomeInputCadastro"
+                android:layout_marginTop="16dp"
+                android:hint="Usuário"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="16dp"
+                android:background="@drawable/border_selector"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/senhaInputCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userInputCadastro"
+                android:layout_marginTop="16dp"
+                android:hint="Senha"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="16dp"
+                android:background="@drawable/border_selector"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/senhaConfirmInputCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/senhaInputCadastro"
+                android:layout_marginTop="16dp"
+                android:hint="Confirmar Senha"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="16dp"
+                android:background="@drawable/border_selector"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/cadastroBtnCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/senhaConfirmInputCadastro"
+                android:layout_marginTop="24dp"
+                android:text="Cadastrar nova conta"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <ImageView
+                android:id="@+id/backArrowCadastro"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cadastroBtnCadastro"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-351dp"
+                android:src="@drawable/previous_arrow" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
